@@ -4,7 +4,85 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Retreat</title>
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --text: #2d2a26;
+      --muted: #6b645b;
+      --accent: #4f7a5a;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 96px 16px 72px;
+      text-align: center;
+      background: linear-gradient(160deg, #dfe9dc, #f3ece0);
+    }
+    header h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin: 0 0 12px; }
+    header p { color: var(--muted); font-size: 1.15rem; margin: 0 0 28px; }
+    .button {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+    }
+    main { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+    section { padding: 56px 0; border-bottom: 1px solid #e6dfd4; }
+    section:last-child { border-bottom: none; }
+    h2 { color: var(--accent); margin-top: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card { background: var(--card); padding: 20px; border-radius: 12px; }
+    .card h3 { margin: 0 0 6px; }
+    .card p { margin: 0; color: var(--muted); }
+    footer { text-align: center; padding: 32px 16px; color: var(--muted); font-size: 0.9rem; }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Find Your Stillness</h1>
+    <p>A weekend retreat for rest, reflection, and renewal.</p>
+    <a class="button" href="#register">Reserve your spot</a>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About the Retreat</h2>
+      <p>Step away from the everyday and reconnect with yourself. Our retreat offers guided meditation, gentle movement, nourishing meals, and time in nature.</p>
+    </section>
+
+    <section id="schedule">
+      <h2>Schedule</h2>
+      <div class="grid">
+        <div class="card"><h3>Friday</h3><p>Arrival, welcome circle, evening meditation</p></div>
+        <div class="card"><h3>Saturday</h3><p>Sunrise yoga, workshops, nature walk, fireside gathering</p></div>
+        <div class="card"><h3>Sunday</h3><p>Morning practice, closing circle, farewell lunch</p></div>
+      </div>
+    </section>
+
+    <section id="location">
+      <h2>Location</h2>
+      <p>Venue details coming soon.</p>
+    </section>
+
+    <section id="register">
+      <h2>Register</h2>
+      <p>Registration details coming soon. Check back for dates and pricing.</p>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Retreat. All rights reserved.</footer>
 </body>
 </html>
